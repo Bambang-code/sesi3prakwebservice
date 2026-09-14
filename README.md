@@ -39,18 +39,11 @@ curl -X POST http://localhost:3000/api/penjualan \
   -d '{"pelanggan_id":1,"produk_id":1,"jumlah":2}'
 ```
 
-## Persiapan deployment
+## Deployment Vercel
 
-### Render
-
-Repository sudah memiliki `render.yaml`. Buat Blueprint/Web Service dari
-repository, lalu isi environment variable `DATABASE_URL` di dashboard Render.
-
-### Vercel
-
-Repository sudah memiliki `vercel.json`. Vercel mendeteksi aplikasi Express dari
-`src/app.js` dan menjalankannya sebagai satu Vercel Function. Import repository ke
-Vercel, kemudian tambahkan environment variable `DATABASE_URL`.
+Vercel mendeteksi aplikasi Express dari `src/app.js` secara otomatis dan
+menjalankannya sebagai satu Vercel Function. Import repository ke Vercel,
+kemudian tambahkan environment variable `DATABASE_URL`.
 
 Untuk mencoba runtime Vercel secara lokal setelah login ke Vercel CLI:
 
