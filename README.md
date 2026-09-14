@@ -53,9 +53,8 @@ npx vercel login
 npm run dev:vercel
 ```
 
-Sesudah deploy, ganti server placeholder `https://your-app.vercel.app` di
-`openapi.yaml` dengan URL yang sebenarnya agar fitur **Try it out** menuju server
-deployment.
+Production API tersedia di `https://sesi3prakwebservice.vercel.app`. Swagger UI
+tersedia pada path `/docs`.
 
 ## Catatan desain
 

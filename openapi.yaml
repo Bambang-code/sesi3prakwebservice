@@ -8,10 +8,10 @@ info:
     Kontrak REST API untuk mengelola resource penjualan pada database Neon.
     Nilai `total` dihitung oleh server dari harga produk dikali jumlah barang.
 servers:
+  - url: https://sesi3prakwebservice.vercel.app
+    description: Server production Vercel
   - url: http://localhost:3000
     description: Server lokal
-  - url: https://your-app.vercel.app
-    description: Ganti dengan URL deployment
 tags:
   - name: Penjualan
     description: Operasi data dan status transaksi penjualan
