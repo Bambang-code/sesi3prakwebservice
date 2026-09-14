@@ -1,0 +1,24 @@
+{
+  "name": "api-penjualan-contract-first",
+  "version": "1.0.0",
+  "private": true,
+  "description": "REST API penjualan berbasis Neon PostgreSQL dengan kontrak OpenAPI 3.0.3",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "dev:vercel": "vercel dev",
+    "start": "node server.js",
+    "check": "node --check server.js && node --check src/app.js && node --check src/db.js && node --check src/routes/penjualan.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@vercel/functions": "^2.2.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pg": "^8.13.1",
+    "swagger-ui-express": "^5.0.1",
+    "yaml": "^2.7.0"
+  }
+}
