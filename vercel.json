@@ -2,7 +2,10 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "functions": {
     "api/index.js": {
-      "includeFiles": "openapi.yaml",
+      "includeFiles": [
+        "openapi.yaml",
+        "node_modules/swagger-ui-dist/**"
+      ],
       "maxDuration": 30
     }
   },
