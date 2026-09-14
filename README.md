@@ -41,9 +41,10 @@ curl -X POST http://localhost:3000/api/penjualan \
 
 ## Deployment Vercel
 
-Vercel mendeteksi aplikasi Express dari `src/app.js` secara otomatis dan
-menjalankannya sebagai satu Vercel Function. Import repository ke Vercel,
-kemudian tambahkan environment variable `DATABASE_URL`.
+Vercel menjalankan aplikasi Express sebagai satu Function melalui
+`api/index.js`. Semua URL ditulis ulang ke Function tersebut melalui
+`vercel.json`. Tambahkan environment variable `DATABASE_URL` pada project
+Vercel sebelum menguji endpoint database.
 
 Untuk mencoba runtime Vercel secara lokal setelah login ke Vercel CLI:
 
